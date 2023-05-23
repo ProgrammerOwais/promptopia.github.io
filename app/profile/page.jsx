@@ -9,7 +9,7 @@ const UserProfile = () => {
   const [posts, setPosts] = useState([]);
   const router = useRouter();
   const handleEdit = async (post) => {
-    router.push(`/update-prompt?=${post._id}`);
+    router.push(`/update-prompt?id=${post._id}`);
   };
   const handleDelete = async (post) => {
     const hasConfirmed = confirm("Are sure, do you want to delete the prompt");

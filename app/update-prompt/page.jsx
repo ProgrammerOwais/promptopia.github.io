@@ -1,26 +1,21 @@
 "use client";
 import { useState, useEffect } from "react";
-// import { useSession } from "next-auth/react";
 import { useRouter, useSearchParams } from "next/navigation";
 // useSearchParams is used to get the parameters from search bar
 import Form from "@components/Form";
 const EditPrompt = () => {
+  // Extract the value of the 'id' parameter from the URL
   const searchParams = useSearchParams();
   const paramId = searchParams.get("id");
-  // Get the current browser URL
-  //   const url = new URL(window.location.href);
+  // console.log("the current path is: ", searchParams);
+  // console.log("the params id is; ", paramId);
 
-  // Extract the value of the 'id' parameter from the URL
-  //   const paramId = url.searchParams.get("id");
-
-  //   const paramId = "646793daac92d5581ab9b57e";
   const router = useRouter();
   const [submitting, setSubmitting] = useState(false);
   const [post, setPost] = useState({
     prompt: "",
     tag: "",
   });
-  console.log("the params id is; ", paramId);
   useEffect(() => {
     const displayData = async () => {
       const response = await fetch(`/api/prompt/${paramId}`);

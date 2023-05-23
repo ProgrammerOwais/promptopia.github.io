@@ -3,7 +3,7 @@ import Nav from "@components/Nav";
 import Provider from "@components/Provider";
 export const metadata = {
   title: "Promptopia",
-  description: "This fullstack app is about sharing & making prompls",
+  description: "This fullstack app is about sharing & making prompts",
 };
 const RootLayout = ({ children }) => {
   return (
