@@ -41,7 +41,7 @@ const UserProfile = () => {
   return (
     // <div> check data </div>
     <Profile
-      name="my"
+      name="My"
       desc="Welcome to my promtopia profile"
       data={posts}
       handleEdit={handleEdit}

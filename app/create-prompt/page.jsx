@@ -13,7 +13,7 @@ const CreatePrompt = () => {
 
   const { data: session } = useSession();
   const createPrompt = async (e) => {
-    console.log("before function executions");
+    // console.log("before function executions");
     e.preventDefault();
     setSubmitting(true);
     try {
@@ -25,7 +25,7 @@ const CreatePrompt = () => {
           tag: post.tag,
         }),
       });
-      console.log("response value is: ", response);
+      // console.log("response value is: ", response);
       if (response.ok) {
         router.push("/");
       }

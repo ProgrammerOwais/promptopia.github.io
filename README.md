@@ -2,7 +2,7 @@
 
 The app is about to create a useful & informative prompts & share with people.
 Here you can find different authentic & standard AI best practice prompts.
-The app is 90% completed.
+The app is 100% completed.
 
 ## What I Learned
 
